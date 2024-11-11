@@ -19,7 +19,7 @@ void setup() {
   Serial.begin(57600);
 }
 
-void onClock() { // Prints Data bits and Address bits in binary and in hex, and outputs whether the CPU is reading or writing
+void onClock() { // Prints data bits and address bits in binary and in hex, and outputs whether the CPU is reading or writing
   char output[15];
 
   unsigned int address = 0;
