@@ -5,10 +5,10 @@ const char DATA[] = {39, 41, 43, 45, 47, 49, 51, 53};
 #define READ_WRITE 3
 
 void setup() {
-  for (int n = 0; n < 16; n += 1) { // Initialize Adress bits to Arduino pins
+  for (int n = 0; n < 16; n += 1) { // Initializes adress bits to Arduino pins
     pinMode(ADDR[n], INPUT);
   }
-  for (int n = 0; n < 8; n += 1) { // Initialize Data bits to Arduino pins
+  for (int n = 0; n < 8; n += 1) { // Initializes data bits to Arduino pins
     pinMode(DATA[n], INPUT);
   }
   pinMode(CLOCK, INPUT);
